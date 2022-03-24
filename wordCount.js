@@ -3,11 +3,11 @@ const separator = ' ';
 
 module.exports = function wordCount(sentence) {
   return sentence
-    .replace(ignore, ' ')
+    .replace(ignore, '')
     .toLowerCase()
     .split(separator)
-    .reduce((prev, current) => {
-      prev[current] += 1 ?? 1;
-      return prev;
-    });
+    .reduce((acc, current) => {
+      acc[current] = (acc[current] ?? 0) + 1;
+      return acc;
+    },{});
 };
