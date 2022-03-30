@@ -1,8 +1,8 @@
 const HttpServer = require('http').Server;
 
-const server = new HttpServer();
+const httpServer = new HttpServer();
 
-server.on('request', (req, res) => {
+httpServer.on('request', (req, res) => {
     res.statusCode = 200;
     res.setHeader('content-type', 'text/html');
 
@@ -19,8 +19,8 @@ server.on('request', (req, res) => {
     res.end();
 })
 
-server.on('listening', () => {
+httpServer.on('listening', () => {
     console.log('Addressbuch erreichbar unter http://0.0.0.0:8080.');
 })
 
-server.listen(8080);
+httpServer.listen(8080);
