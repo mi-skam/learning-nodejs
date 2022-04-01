@@ -1,0 +1,20 @@
+{
+  "name": "node-buch",
+  "version": "1.0.0",
+  "description": "A realtime chat application in node.js",
+  "main": "index.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-session": "^1.4.0",
+    "express": "^4.17.1",
+    "pug": "^3.0.2",
+    "socket.io": "^4.1.3"
+  }
+}

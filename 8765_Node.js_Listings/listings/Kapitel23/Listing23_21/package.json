@@ -1,0 +1,16 @@
+{
+  "name": "node-buch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "buffer.js",
+  "private": true,
+  "scripts": {
+    "test": "jasmine"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^3.9.0"
+  }
+}

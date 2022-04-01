@@ -1,0 +1,19 @@
+{
+  "name": "node-buch",
+  "version": "1.0.0",
+  "description": "A realtime chat application in node.js",
+  "main": "index.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.2",
+    "ws": "^8.1.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "node-buch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "csurf": "^1.11.0",
+    "entities": "^3.0.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3"
+  }
+}

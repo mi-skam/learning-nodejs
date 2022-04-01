@@ -1,0 +1,14 @@
+{
+  "name": "node-buch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "buffer.js",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node index.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

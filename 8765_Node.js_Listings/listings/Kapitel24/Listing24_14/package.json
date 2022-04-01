@@ -1,0 +1,18 @@
+{
+  "name": "node-buch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "db": "docker run --name mysql -e MYSQL_ROOT_PASSWORD=topSecret -e MYSQL_ROOT_HOST=% -e MYSQL_DATABASE=test -p 3306:3306 -d mysql:latest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^2.3.0"
+  }
+}

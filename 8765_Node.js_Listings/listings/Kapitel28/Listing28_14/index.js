@@ -1,0 +1,32 @@
+function getInputAndOutputFiles() {
+  const input = Deno.args.find((arg) => arg.startsWith('--input=')).substr(8);
+  const output = Deno.args.find((arg) => arg.startsWith('--output=')).substr(9);
+
+  console.log(`Input was: ${input}, Output was: ${output}`);
+
+  return [input, output];
+}
+
+const [input, output] = getInputAndOutputFiles();
+
+async function fileExists(filename) {
+  try {
+    await Deno.stat(`./${filename}`);
+    return true;
+  } catch (error) {
+    if (error instanceof Deno.errors.NotFound) {
+      return false;
+    }
+    throw error;
+  }
+}
+
+const encoder = new TextEncoder();
+
+if (await fileExists(input)) {
+  const text = await Deno.readTextFile(`./${input}`);
+  console.log(text);
+
+  const encodedText = encoder.encode(text);
+  Deno.writeFile(`./${output}`, encodedText);
+}

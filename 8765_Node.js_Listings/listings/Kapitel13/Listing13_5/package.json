@@ -1,0 +1,20 @@
+{
+  "name": "node-buch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "check": "flow check",
+    "removeTypes": "flow-remove-types index.flow.js > index.js",
+    "start": "npm run check && npm run removeTypes && node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "flow-bin": "^0.157.0",
+    "flow-remove-types": "^2.157.0"
+  }
+}

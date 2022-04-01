@@ -1,0 +1,11 @@
+[Unit]
+Description=Express Application
+After=network.target
+
+[Service]
+User=node
+WorkingDirectory=/srv/node
+ExecStart=npm start
+
+[Install]
+WantedBy=multi-user.target

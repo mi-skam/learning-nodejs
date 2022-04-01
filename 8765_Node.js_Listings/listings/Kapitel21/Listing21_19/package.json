@@ -1,0 +1,15 @@
+{
+  "name": "node-buch",
+  "version": "1.0.0",
+  "description": "Just another example application",
+  "main": "index.js",
+  "bin": {
+    "nodebuch": "bin/app"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

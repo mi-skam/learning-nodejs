@@ -1,0 +1,13 @@
+{
+  "name": "kapitel8",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mysql": "docker run --name mysql -v db-data:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=topSecret -e MYSQL_ROOT_HOST=% -p 3306:3306 -d mysql:latest",
+    "mongo": "docker run --name mongo -v db-data:/data/db -p 27017:27017 -d mongo:latest",
+    "redis": "docker run --name redis -v db-data:/data -p 6379:6379 -d redis:latest "
+  },
+  "author": "",
+  "license": "ISC"
+}
